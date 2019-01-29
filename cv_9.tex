@@ -1,0 +1,311 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Plasmati Graduate CV
+% LaTeX Template
+% Version 1.0 (24/3/13)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Alessandro Plasmati (alessandro.plasmati@gmail.com)
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+% Important note:
+% This template needs to be compiled with XeLaTeX.
+% The main document font is called Fontin and can be downloaded for free
+% from here: http://www.exljbris.com/fontin.html
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[a4paper,10pt]{article} % Default font size and paper size
+
+\usepackage{fontspec} % For loading fonts
+\defaultfontfeatures{Mapping=tex-text}
+\setmainfont[SmallCapsFont = Fontin SmallCaps]{Fontin} % Main document font
+
+\usepackage{xunicode,xltxtra,url,parskip} % Formatting packages
+
+\usepackage[usenames,dvipsnames]{xcolor} % Required for specifying custom colors
+
+\usepackage[big]{layaureo} % Margin formatting of the A4 page, an alternative to layaureo can be \usepackage{fullpage}
+% To reduce the height of the top margin uncomment: \addtolength{\voffset}{-1.3cm}
+
+\usepackage{hyperref} % Required for adding links	and customizing them
+\definecolor{linkcolour}{rgb}{0,0.2,0.6} % Link color
+\hypersetup{colorlinks,breaklinks,urlcolor=linkcolour,linkcolor=linkcolour} % Set link colors throughout the document
+
+\usepackage{titlesec} % Used to customize the \section command
+\titleformat{\section}{\Large\scshape\raggedright}{}{0em}{}[\titlerule] % Text formatting of sections
+\titlespacing{\section}{0pt}{3pt}{3pt} % Spacing around sections
+
+\begin{document}
+
+\pagestyle{empty} % Removes page numbering
+
+\font\fb=''[cmr10]'' % Change the font of the \LaTeX command under the skills section
+
+%----------------------------------------------------------------------------------------
+%	NAME AND CONTACT INFORMATION
+%----------------------------------------------------------------------------------------
+
+\par{\centering{\Huge Shaohao \textsc{Zeng}}\bigskip\par} % Your name
+
+\section{Personal Data}
+
+\begin{tabular}{rl}
+%\textsc{Place and Date of Birth:} & China  | 18 December 1995 \\
+%\textsc{Address:} & Shenzhen, Guangdong, China \\
+\textsc{Phone:} & +86 134-186-42266\\
+\textsc{email:} & \href{mailto:gregsysu@gmail.com}{gregsysu@gmail.com}
+\end{tabular}
+
+%----------------------------------------------------------------------------------------
+%	WORK EXPERIENCE 
+%----------------------------------------------------------------------------------------
+
+\section{Experience}
+
+\begin{tabular}{r|p{11cm}}
+\emph{Aug 2014 - Current} & B.S. in Computer Science \\
+& Sun Yat-sen University, Guangzhou\\ 
+& GPA: 3.7/4.0 \\
+%& \footnotesize{Developed spreadsheets for risk analysis on exotic derivatives on a wide array of commodities (\textit{ags, oils, precious} and \textit{base metals}), managed blotter and secondary trades on structured notes, liaised with Middle Office, Sales and Structuring for bookkeeping.}\\
+
+
+\multicolumn{2}{c}{} \\
+
+
+%------------------------------------------------
+\emph{Oct 2017 - Dec 2017} & Intern in \href{http://www.tusimple.com/index-en.html}{\textbf{TuSimple}} \\
+& Infra Engineer Intern, High Performance Computing (HPC) \\
+& \footnotesize{TuSimple is a startup dedicated in autonomous truck driving. I designed and implemented some infrastructure components.}\\
+
+\multicolumn{2}{c}{} \\
+
+%------------------------------------------------
+\emph{Apr 2017 - Oct 2017} & Research Assistant in \href{http://netlabsysu.org}{\textbf{Netlab @ SYSU}} \\
+& Mentor: Di Wu\\ 
+& \footnotesize{I participated in the design and implementation of a large-scale commercial video recommender system. }\\
+
+
+\multicolumn{2}{c}{} 
+
+
+
+%\textsc{Jul 2010-Oct 2011} & Summer Intern at \textsc{Intech Inc}, Chicago \emph{}\\
+%& \footnotesize{Received pre-placed offer from the Exotics Trading Desk as a result of very positive review. Rated ``\emph{truly distinctive}'' for Analytical Skills and Teamwork.}\\
+%\multicolumn{2}{c}{} \\
+
+%------------------------------------------------
+
+%\textsc{Jan-Mar 2011} & Computer Technician at \textsc{Buy More}, Burbank \emph{}\\
+%& \footnotesize{Worked in the Nerd Herd and helped to solve computer problems by asking customers to turn their computers off and on again.}
+\end{tabular}
+
+
+
+
+\section{Project}
+
+\begin{tabular}{rp{11cm}}
+	
+	\textsc{external DNS:} & An intern project; I implemented a service that tracked and managed the DNS records of Docker services run in Rancher; Developers would not need to handle the DNS table manually.
+	
+	\\
+	
+	\textsc{Video Recsys:} & A lab project; I participated in the development of a commercial  video recommender system for Dr. Peng Group, China's largest non-state owned telecom operator; I was responsible for the design and implementation of the content-based recommender module.
+	
+	\\
+	
+	
+	\textsc{Kaggle Contest:} & Ranked Top 9\% (221/2488) in \textit{Kaggle's Two Sigma Connect: Rental Listing Inquiries}; The task is to predict users' preferences to different listing in NYC;  Conducted several feature engineering techniques and ensembled models to reduce prediction loss.
+	
+	\\
+	
+	%	\textsc{Image Proc Algos:} & Course work; Implemented several digital image processing algorithms \\& learnt from  the corresponding course.
+	%	\\
+	
+	\textsc{Android APPs:} & Course work; I have participated in several Android projects, including a chat APP of which I wrote for the server side and a contact APP of which I wrote the front-end.
+	
+	\\
+	
+	\textsc{OBJ Viewer:}  & Course work; I implemented a renderer in Core OpenGL and it could show a 3D model stored in an  OBJ file. 
+	
+	\\
+	
+	\textsc{OS proto:} & Course work; Written in C and x86 Assembly and can boot from real mode to protected  mode. Binaries from hard disk can be loaded and run concurrently.
+	
+	\\
+	
+	\textsc{JSON Parser:} & Written in C++; Bytes are parsed using the recursive descent algorithm.
+	
+	
+	
+\end{tabular}
+
+
+
+\section{Skill}
+
+\begin{tabular}{rp{11cm}}
+	\textsc{Spark:} & Familiar with Spark API and have implemented Latent Semantics Indexing (LSI) algorithms in Spark for the Recsys project.
+	
+	\\
+	
+	\textsc{Python:} &  Familiar with Python and conventional scientific computing modules including Numpy, Scipy, Pandas and scikit-learn.
+	
+	\\
+	
+	\textsc{C++:} & Familiar with C++ and STL, including the recent standard C++ 11.
+	
+	\\
+	
+	\textsc{SQL:} & Familiar with common SQL syntax .
+	
+	\\
+	
+	\textsc{Windows/Linux:} & Familiar with common uses and some developing techniques in these OS.
+	
+	\\
+	
+\end{tabular}
+
+\section{Online Course}
+
+\begin{tabular}{lp{8cm}}
+	\textsc{Programming Languages:} & Taken in Coursera; I learnt the paradigm of functional programming by Standard ML; I implemented an interpreter for a simple S-expression like language by Racket; I learnt fundamental concepts of OOP using Ruby.
+	
+	\\
+	
+	\textsc{Algorithms: Design and Analysis} & Taken in Coursera; I learnt algorithm design techniques (Divide \& Conquer, Dynamic Programming and etc.) and analysis techniques ( complexity analysis, probabilistic proof techniques and etc.).
+	
+	\\
+	
+	\textsc{Machine Learning} & Taken in Coursera; I learnt a bunch of models and learning algorithms.
+	
+	\\ 
+	
+	\textsc{Deep Learning} & Taken in Coursera; I learnt the concept and practice of Deep Learning, some optimization techniques and Convolutional Neural Network.
+	
+	\\
+	
+	\textsc{Machine Learning Foundations} & Taken in Coursera; I learnt the statistical learning theory, the fundamentals of machine learning techniques.
+	
+	
+\end{tabular}
+
+%----------------------------------------------------------------------------------------
+%	SCHOLARSHIPS AND ADDITIONAL INFO
+%----------------------------------------------------------------------------------------
+%
+%\section{Scholarships and Certificates}
+%
+%\begin{tabular}{rl}
+%\textsc{Sept.} 2012 & Faculty of Science Masters Scholarship \footnotesize(\$30,000)\normalsize\\
+%
+%\textsc{June} 2010 & {\textsc{Gmat}\textregistered}\setmainfont[SmallCapsFont=Fontin SmallCaps]{Fontin-Regular}: 730 (\textsc{q:50;v:39}) 96\textsuperscript{th} percentile; \textsc{awa}: 6.0/6.0 (89\textsuperscript{th} percentile)
+%\end{tabular}
+
+%----------------------------------------------------------------------------------------
+%	LANGUAGES
+%----------------------------------------------------------------------------------------
+
+%\section{Languages}
+%
+%\begin{tabular}{rl}
+%\textsc{English:} & Fluent\\
+%
+%\textsc{Italian:} & Mothertongue\\
+%
+%\textsc{French:} & Basic Knowledge\\
+%\end{tabular}
+
+%----------------------------------------------------------------------------------------
+%	COMPUTER SKILLS 
+%----------------------------------------------------------------------------------------
+
+%\section{Computer Skills}
+%
+%\begin{tabular}{rl}
+%Basic Knowledge: & \textsc{php}, my\textsc{sql}, \textsc{html}, Access, \textsc{Linux}, ubuntu, {\fb \LaTeX}\setmainfont[SmallCapsFont=Fontin SmallCaps]{Fontin-Regular}\\
+%
+%Intermediate Knowledge: & \textsc{vba}, Excel, Word, PowerPoint\\
+%\end{tabular}
+
+%----------------------------------------------------------------------------------------
+%	INTERESTS AND ACTIVITIES
+%----------------------------------------------------------------------------------------
+
+%\section{Interests and Activities}
+%
+%Technology, Open-Source, Programming\\
+%Paradoxes in Decision Making, Psychoanalysis, Behavioural Finance\\
+%Football, Travelling
+
+%----------------------------------------------------------------------------------------
+
+%\newpage
+
+%----------------------------------------------------------------------------------------
+%	GRADE TABLES
+%----------------------------------------------------------------------------------------
+
+%\par{\centering\Large \hypertarget{grds}{Master of Science in \textsc{Finance}}\par}\large{\centering Grades\par}\normalsize
+%
+%\begin{center}
+%\begin{tabular}{lcc}
+%\multicolumn{1}{c}{\textsc{Exam}} & \textsc{Grade}&\textsc{Credit Hrs}\\ \hline
+%Corporate Finance (Valuation) & 25 & 6\\
+%Financial Statement Analysis & 28 & 6\\
+%Statistics & 27 & 6\\
+%Theory of Finance & 26 & 6\\
+%Quantitative Methods for Finance & 30 & 6\\
+%Econometrics & 24 & 6\\
+%Derivatives & 31 & 6\\
+%Management of Financial and Insurance Companies & 30 & 6\\
+%Business Law & 31 & 6\\
+%Investment Banking	& 28 & 6\\ \\		
+%Behavioral Models for Economics and Finance	 & 29 & 6\\
+%Numerical Methods for Finance & 29 & 6\\
+%Advanced Derivatives & 30 & 6\\
+%Fixed Income (Advanced Methods) & 30 & 6\\ \\
+%English Language & 30 &	4\\
+%French Language & 31 &	4\\	
+%Internship & & 8\\		
+%Final Thesis & & 20\\	
+%& Total & 120\\\cline{2-3}
+%&\textsc{Gpa}&\textbf{8.0}
+%\end{tabular}
+%\end{center}
+%\bigskip
+%\hrule
+%\bigskip
+
+%------------------------------------------------
+
+%\bigskip
+%
+%\par{\centering\Large \hypertarget{grds_usc}{Exchange Program at \textsc{usc}, Los Angeles}\par}\large{\centering Grades\par}\normalsize
+%
+%\begin{center}
+%\begin{tabular}{lcc}
+%\multicolumn{1}{c}{\textsc{Exam}} & \textsc{Grade} & \textsc{Grade Points}\\ 
+%\hline
+%Corporate Financial Strategy & A & 4\\
+%Derivatives & A & 4\\
+%Money, Credit, and Banking & A & 4\\
+%Business Strategy & A- & 3.5\\
+%& &\\\cline{2-3}
+%& \textsc{Gpa} & \textbf{3.875}
+%\end{tabular}
+%\end{center}
+
+%----------------------------------------------------------------------------------------
+
+\end{document}
